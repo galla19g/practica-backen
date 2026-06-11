@@ -5,6 +5,7 @@ import { CommonModule } from './common/common.module';
 import { DatabaseModule } from './database/database.module';
 import { UsersModule } from './users/users.module';
 import { EstudianteModule } from './estudiantes/estudiante.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -18,5 +19,6 @@ import { EstudianteModule } from './estudiantes/estudiante.module';
     AuthModule,
     EstudianteModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}

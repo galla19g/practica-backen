@@ -30,7 +30,7 @@ async function bootstrap() {
   const port = Number(configService.get<string>('PORT')) || 8080;
   await app.listen(port, '0.0.0.0');
   console.log(`Server is running on port ${port}`);
-  console.log(`Swagger docs: http://localhost:${port}/api`);
+  console.log(`Swagger docs: http://localhost:${port}`);
 }
 
 bootstrap();
